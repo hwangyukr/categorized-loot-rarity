@@ -16,7 +16,7 @@ suggestion of new loot NFT rarity
 
  - adjusted threshold of item counts each part
 
-|part|common|rare|epic|legendary|
+|part|legendary|epic|rare|common|
  |---|---|---|---|---|
  |weapon|count<2|count<200|count<320|other|
  |chest|count<2|count<300|count<385|other|
