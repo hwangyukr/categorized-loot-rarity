@@ -17,7 +17,7 @@ suggestion of new loot NFT rarity
 ## 3. How to use this package
 
 ### installation
-```
+```bash
  npm install --save improved-loot-rarity
 ```
  - or just download and unzip it
@@ -26,13 +26,13 @@ suggestion of new loot NFT rarity
 ### code example
 
  - sample1
-```
+```javascript
 var LootRarity = require('improved-loot-rarity');
 var result = LootRarity.getImprovedRarities(lootId=50);
 console.log(result);
 ```
   - output
-  ```
+  ```javascript
   {
       weapon: 1,
       chest: 3,
@@ -45,14 +45,14 @@ console.log(result);
   }
   ```
  - sample2
-  ```
+  ```javascript
   var LootRarity = require('improved-loot-rarity');
   var result = LootRarity.getImprovedRarities(lootId=50, parts='weapon', value_type='tier');
   ```
   - output : `common`
  - appendix
    - it works to get traditional rarity also for your convenience.
-   ```
+   ```javascript
    var LootRarity = require('improved-loot-rarity');
    console.log(LootRarity.getImprovedRarities(lootId=50, parts='weapon', value_type='tier')); // 'common'
    ```
