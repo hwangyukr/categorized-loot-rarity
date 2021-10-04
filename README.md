@@ -14,14 +14,26 @@ suggestion of new loot NFT rarity
 
  <img src="https://github.com/hwangyukr/improved-loot-rarity/blob/master/docs/before_after.png?raw=true" alt="Before And After" width="720px">
 
+ - adjusted threshold of item counts each part
+ |part|common|rare|epic|legendary|
+ |---|---|---|---|---|
+ |weapon|count<2|count<200|count<320|other|
+ |chest|count<2|count<300|count<385|other|
+ |head|count<2|count<300|count<380|other|
+ |waist|count<2|count<300|count<380|other|
+ |foot|count<2|count<300|count<380|other|
+ |hand|count<2|count<300|count<380|other|
+ |neck|count<2|count<1800|other|-|
+ |ring|count<2|count<1000|other|-|
+
 ## 3. How to use this package
 
 ### installation
 ```bash
  npm install --save improved-loot-rarity
 ```
- - or just download and unzip it
- - it doesn't depend anything. This is a simple vanilaJs functions
+ - Or just download and unzip it
+ - It doesn't depend anything. These are simple vanilaJs functions
 
 ### code example
 
