@@ -56,3 +56,6 @@ console.log(result);
    var LootRarity = require('improved-loot-rarity');
    console.log(LootRarity.getImprovedRarities(lootId=50, parts='weapon', value_type='tier')); // 'common'
    ```
+
+### compare
+<img src="https://github.com/hwangyukr/improved-loot-rarity/blob/master/docs/charts.png?raw=true" alt="Before And After" width="640px">
