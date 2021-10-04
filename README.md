@@ -1,6 +1,7 @@
 # improved_loot_rarity
 suggestion of new loot NFT rarity
 
+<img src="https://github.com/hwangyukr/improved-loot-rarity/blob/master/docs/loot.png?raw=true" alt="Loot for adventure" width="480px">
 
 ## 1. Problems of traditional Loot Rarity
  1. The variance of traditional rarity of Loot NFT is not even
@@ -11,6 +12,7 @@ suggestion of new loot NFT rarity
 ## 2. Suggestion
  - We should adjust the counts threshold for each parts of items.
 
+ <img src="https://github.com/hwangyukr/improved-loot-rarity/blob/master/docs/before_after.png?raw=true" alt="Before And After" width="720px">
 
 ## 3. How to use this package
 
