@@ -1,0 +1,16 @@
+{
+  "name": "improved-loot-rarity",
+  "version": "1.0.0",
+  "description": "suggestion of new loot NFT rarity",
+  "main": "src/index.js",
+  "scripts": {
+
+  },
+  "author": "lhwanstar@gmail.com",
+  "keywords": [ "loot", "nft", "vanila" ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/axios/axios.git"
+  },
+  "license": "MIT"
+}
