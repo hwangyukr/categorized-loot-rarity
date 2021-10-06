@@ -10,7 +10,7 @@
   "keywords": [ "loot", "nft", "vanila" ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/axios/axios.git"
+    "url": "https://github.com/hwangyukr/improved-loot-rarity"
   },
   "license": "MIT"
 }
