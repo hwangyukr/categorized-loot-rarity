@@ -52,8 +52,8 @@ console.log(result);
       waist: 1,
       foot: 3,
       hand: 4,
-      neck: 1,
-      ring: 1
+      neck: 2,
+      ring: 2
   }
   ```
  - sample2
