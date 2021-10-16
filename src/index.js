@@ -3,23 +3,23 @@ function LootRarity() {
     var self = this;
     var part_types = ['all', 'weapon','chest','head','waist','foot','hand','neck','ring'];
 
-    this.loadImprovedRarity = (function getLoadImprovedRarityFunc() {
-        var improved_loot_rarity = {'level': null, 'tier': null};
+    this.loadBalancedRarity = (function getLoadBalancedRarityFunc() {
+        var balanced_loot_rarity = {'level': null, 'tier': null};
         return function(value_type='level') {
             var type = value_type === 'level' ? value_type : 'tier';
-            if (improved_loot_rarity[type]) return improved_loot_rarity[type]; // load cached data
-            if (type === 'level') return improved_loot_rarity[type] = require('../data/improved_loot_level.json');
-            if (type === 'tier') return improved_loot_rarity[type] = require('../data/improved_loot_tier.json');
+            if (balanced_loot_rarity[type]) return balanced_loot_rarity[type]; // load cached data
+            if (type === 'level') return balanced_loot_rarity[type] = require('../data/balanced_loot_level.json');
+            if (type === 'tier') return balanced_loot_rarity[type] = require('../data/balanced_loot_tier.json');
         }
     })();
 
     this.loadTraditionalRarity = (function getLoadTraditionalRarityFunc() {
-        var improved_loot_rarity = {'level': null, 'tier': null};
+        var balanced_loot_rarity = {'level': null, 'tier': null};
         return function(value_type='level') {
             var type = value_type === 'level' ? value_type : 'tier';
-            if (improved_loot_rarity[type]) return improved_loot_rarity[type]; // load cached data
-            if (type === 'level') return improved_loot_rarity[type] = require('../data/traditional_loot_level.json');
-            if (type === 'tier') return improved_loot_rarity[type] = require('../data/traditional_loot_tier.json');
+            if (balanced_loot_rarity[type]) return balanced_loot_rarity[type]; // load cached data
+            if (type === 'level') return balanced_loot_rarity[type] = require('../data/traditional_loot_level.json');
+            if (type === 'tier') return balanced_loot_rarity[type] = require('../data/traditional_loot_tier.json');
         }
     })();
 
@@ -32,8 +32,8 @@ function LootRarity() {
         return loot;
     }
 
-    this.getImprovedRarities = function(lootId, parts='all', value_type='level') {
-        return self.getRarities(lootId=lootId, parts=parts, value_type=value_type, self.loadImprovedRarity);
+    this.getBalancedRarities = function(lootId, parts='all', value_type='level') {
+        return self.getRarities(lootId=lootId, parts=parts, value_type=value_type, self.loadBalancedRarity);
     }
 
     this.getTraditionalRarities = function(lootId, parts='all', value_type='level') {

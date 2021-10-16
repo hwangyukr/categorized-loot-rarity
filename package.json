@@ -1,6 +1,6 @@
 {
-  "name": "improved-loot-rarity",
-  "version": "1.0.0",
+  "name": "balanced-loot-rarity",
+  "version": "1.0.1",
   "description": "suggestion of new loot NFT rarity",
   "main": "src/index.js",
   "scripts": {
