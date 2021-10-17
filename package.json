@@ -1,5 +1,5 @@
 {
-  "name": "balanced-loot-rarity",
+  "name": "categorized-loot-rarity",
   "version": "1.0.1",
   "description": "suggestion of new loot NFT rarity",
   "main": "src/index.js",
@@ -10,7 +10,7 @@
   "keywords": [ "loot", "nft", "vanila" ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/hwangyukr/improved-loot-rarity"
+    "url": "https://github.com/hwangyukr/categorized-loot-rarity"
   },
   "license": "MIT"
 }
