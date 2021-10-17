@@ -1,7 +1,7 @@
-# balanced_loot_rarity
+# categorized_loot_rarity
 suggestion of new loot NFT rarity
 
-<img src="https://github.com/hwangyukr/balanced-loot-rarity/blob/master/docs/loot.png?raw=true" alt="Loot for adventure" width="320px">
+<img src="https://github.com/hwangyukr/categorized-loot-rarity/blob/master/docs/loot.png?raw=true" alt="Loot for adventure" width="320px">
 
 ## 1. Problems of traditional Loot Rarity
  1. The variance of traditional rarity of Loot NFT is not even
@@ -12,7 +12,7 @@ suggestion of new loot NFT rarity
 ## 2. Suggestion
  - We should adjust the counts threshold for each parts of items.
 
- <img src="https://github.com/hwangyukr/balanced-loot-rarity/blob/master/docs/before_after.png?raw=true" alt="Before And After" width="720px">
+ <img src="https://github.com/hwangyukr/categorized-loot-rarity/blob/master/docs/before_after.png?raw=true" alt="Before And After" width="720px">
 
  - adjusted threshold of item counts each part
 
@@ -31,7 +31,7 @@ suggestion of new loot NFT rarity
 
 ### installation
 ```bash
- npm install --save balanced-loot-rarity
+ npm install --save categorized-loot-rarity
 ```
  - Or just download and unzip it
  - It doesn't depend anything. These are simple vanilaJs functions
@@ -40,8 +40,8 @@ suggestion of new loot NFT rarity
 
  - sample1
 ```javascript
-var LootRarity = require('balanced-loot-rarity');
-var result = LootRarity.getBalancedRarities(lootId=50);
+var LootRarity = require('categorized-loot-rarity');
+var result = LootRarity.getCategorizedRarities(lootId=50);
 console.log(result);
 ```
   - output
@@ -59,16 +59,16 @@ console.log(result);
   ```
  - sample2
   ```javascript
-  var LootRarity = require('balanced-loot-rarity');
-  var result = LootRarity.getBalancedRarities(lootId=50, parts='weapon', value_type='tier');
+  var LootRarity = require('categorized-loot-rarity');
+  var result = LootRarity.getCategorizedRarities(lootId=50, parts='weapon', value_type='tier');
   ```
   - output : `common`
  - appendix
    - it works to get traditional rarity also for your convenience.
    ```javascript
-   var LootRarity = require('balanced-loot-rarity');
-   console.log(LootRarity.getBalancedRarities(lootId=50, parts='weapon', value_type='tier')); // 'common'
+   var LootRarity = require('categorized-loot-rarity');
+   console.log(LootRarity.getCategorizedRarities(lootId=50, parts='weapon', value_type='tier')); // 'common'
    ```
 
 ### compare
-<img src="https://github.com/hwangyukr/balanced-loot-rarity/blob/master/docs/charts.png?raw=true" alt="Before And After" width="640px">
+<img src="https://github.com/hwangyukr/categorized-loot-rarity/blob/master/docs/charts.png?raw=true" alt="Before And After" width="640px">
